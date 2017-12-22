@@ -23,7 +23,6 @@ void read_and_capitalize(){
 	//Loop to read characters until a newline (\n) is encountered
 	while(c != '\n'){
 		//Print out the current character
-		//(Modify this section to produce the output required by the assignment)
 		while(isspace(c)){
 			c = getchar();
 			if(!(isspace(c))){
