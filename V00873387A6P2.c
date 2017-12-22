@@ -20,7 +20,6 @@
 #define INPUT_FILENAME    ("random_shapes.txt")
 #define OUTPUT_FILENAME   ("shapes_output.html")
 
-/* Size of the canvas - Do not change */
 #define CANVAS_SIZE 800
 #define CANVAS_SIZE_X CANVAS_SIZE
 #define CANVAS_SIZE_Y CANVAS_SIZE
@@ -29,8 +28,6 @@
 
 void process_shapes(FILE* ifp, FILE* ofp) {
 	char line[MAX_LINE_LENGTH];
-
-	//SVG prologue code section begins
 
 	if (!ofp) {
 		printf("Error: Output File == NULL\n");
@@ -44,8 +41,6 @@ void process_shapes(FILE* ifp, FILE* ofp) {
 	fputs("<body>\n", ofp);
 	fprintf(ofp, "CSC 111 Art: <br />\n");
 	fprintf(ofp, "<svg width=\"800px\" height=\"800px\">\n");
-
-	//SVG prologue code section ends
 
 	/* Read each line from the input file with fgets */
 	while(fgets(line, MAX_LINE_LENGTH, ifp) != NULL){
